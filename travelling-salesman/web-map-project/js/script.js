@@ -293,7 +293,7 @@ function updateLocationsTable() {
 
 // HEAP'S PERMUTATION
 
-// Swaping items in array
+// Swapping items in array
 var swap = function (array, i, j) {
     var temp;
 
