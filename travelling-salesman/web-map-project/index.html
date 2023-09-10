@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling Salesman - Web Map Project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <h3>Travelling Salesman - Web Map Project</h3>
+                <p>By Pablo Roxo - <a href="https://github.com/pabloroxo" target="_new">https://github.com/pabloroxo</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Click on map to add a location:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <div id="map"></div>
+            </div>
+            <div class="col-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Latitude</th>
+                            <th>Longitude</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody id="locations"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3">
+                <button class="btn btn-primary" id="calculate-route">Calculate shortest route</button>
+            </div>
+            <div class="col-9" id="result"></div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <p class="small fst-italic">With 12 or more locations, the calculation is exponencially longer. Be careful!</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
